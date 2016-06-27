@@ -1,2 +1,3 @@
-# chenmin1992.github.io
-chenmin's technology blog
+# Welcome to chenmin's technology blog
+  https://chenmin1992.github.io
+
