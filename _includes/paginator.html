@@ -1,0 +1,17 @@
+{% if paginator.total_pages > 1 %}
+	<div class="paginator">
+		{% if paginator.previous_page %}
+			<a href="{{ paginator.previous_page_path | prepend:site.baseurl }}" class="previous">Prev</a>
+		{% else %}
+			<span class="previous"></span>
+		{% endif %}
+	<span class="arrorw">>></span>
+	<span class="page_number">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+	<span class="arrorw"><<</span>
+		{% if paginator.next_page %}
+			<a href="{{ paginator.next_page_path | prepend:site.baseurl  }}" class="next">Next</a>
+		{% else %}
+			<span class="next"></span>
+		{% endif %}
+	</div>
+{% endif %}
