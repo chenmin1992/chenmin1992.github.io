@@ -10,11 +10,13 @@ layout: default
     {% for post in paginator.posts %}
       <li class="posts-li">
         <h2>
-          <a class="post-link" href="{{ post.url }}">{{ post.title }}&nbsp;&nbsp;<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></a>
+          <a class="post-link" style="display:inline;" href="{{ post.url }}">{{ post.title }}</a>
+		  <span class="post-meta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }}</span>
         </h2>
 		<p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
+  
   {% include paginator.html %}
 </div>
