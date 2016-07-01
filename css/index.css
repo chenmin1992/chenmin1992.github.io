@@ -55,6 +55,9 @@
 	padding: 120px 0 0 50px;
 }
 
+.rss-link:visited {
+	color:#2a7ae2;
+}
 
 
 /* categories list */
