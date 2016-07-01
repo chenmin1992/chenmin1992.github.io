@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="site-footer my-footer">
 
   <div class="wrapper">
 
@@ -13,7 +13,7 @@
       <div class="footer-col footer-col-2">
         <ul class="social-media-list">
           <li style="width:200px;">Contact Me</li>
-          <li style="width:200px">{% include icon-email.html %}</li>
+          <li style="width:200px" class="footer-link">{% include icon-email.html %}</li>
           {% if site.github_username %}
           <li>
             {% include icon-github.html username=site.github_username %}
@@ -24,9 +24,11 @@
             {% include icon-twitter.html username=site.twitter_username %}
           </li>
           {% endif %}
+          {% if site.qq %}
           <li>
             {% include icon-qq.html %}
           </li>
+          {% endif %}
           <li>
             {% include icon-rss.html %}
           </li>

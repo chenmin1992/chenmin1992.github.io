@@ -2,7 +2,7 @@
 layout: post
 title:  "Renovation in progress"
 date:   2016-6-30 16:42:23 +0800
-categories: Life
+categories: life
 author: Chen Min
 ---
 

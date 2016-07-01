@@ -5,22 +5,28 @@
 
 .header {
 	width:100%;
-	height:200px;
+	height:350px;
 	background-image: url(/img/background.jpg);
 	-moz-background-size:100% 100%;  
 	background-size:100% 100%;
+	
 }
 
 
 .title,.title:visited,.title:hover {
-	color: black;
+	color: white;
 	font-size: 56px;
 	font-weight: 300;
 	line-height: 56px;
 	letter-spacing: -1px;
 	float: left;
-	padding-top: 50px;
+	padding: 50px 0 50px 0;
 	text-decoration:none;
+	text-shadow:0 2px 1px rgba(0, 0, 0, 0.67) !important;
+}
+
+.nav-link,.nav-link:visited,.nav-link:hover {
+	color:white;
 }
 
 .posts-list {
@@ -55,8 +61,13 @@
 	padding: 120px 0 0 50px;
 }
 
-.rss-link:visited {
-	color:#2a7ae2;
+
+.my-footer:link,.my-footer:visited {
+	bround-color:#1c3340;
+}
+
+.footer-link:link,.footer-link:visited {
+	color:#828282;
 }
 
 

@@ -1,0 +1,25 @@
+{% if include.category %}
+    <ul class="posts-list shadow-box">
+    {% for post in include.category %}
+      <li class="posts-li">
+        <h2>
+          <a class="post-link" style="display:inline;" href="{{ post.url }}">{{ post.title }}</a>
+		  <span class="post-meta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }},&nbsp;&nbsp;{{ post.categories }}</span>
+        </h2>
+		<p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <ul class="posts-list shadow-box">
+    {% for post in paginator.posts %}
+      <li class="posts-li">
+        <h2>
+          <a class="post-link" style="display:inline;" href="{{ post.url }}">{{ post.title }}</a>
+		  <span class="post-meta">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ post.date | date: "%b %-d, %Y" }},&nbsp;&nbsp;{{ post.categories }}</span>
+        </h2>
+		<p>{{ post.excerpt }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
