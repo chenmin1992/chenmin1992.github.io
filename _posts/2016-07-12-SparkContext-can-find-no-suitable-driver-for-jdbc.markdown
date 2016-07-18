@@ -90,7 +90,9 @@ the the CTO in my company solve the final problem for me.
 
 the most important line had shown we must tell sparkContext the classname of Driver I mean.
 
-why so , it is a bug that the spark job in yarn cluster mode ran by oozie workflow will occur.
+why so , it is a bug that the spark job in yarn cluster mode ran by oozie workflow.
+
+In other words,you must put driver key into Property that will be used by mysql connection while the spark job is ran by oozie workflow in yarn cluster mode.
 
 so far, all spark job will finish successfully.
 
