@@ -147,3 +147,10 @@
 .articleBody {
 	padding: 50px 50px 50px 50px;
 }
+
+.articleBody  a:link,.articleBody  a:visited,.articleBody  a:hover {
+		color:#4876FF;
+	}
+.articleBody  a:hover {
+		text-decoration:underline;
+	}
