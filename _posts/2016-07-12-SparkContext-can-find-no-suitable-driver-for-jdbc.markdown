@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sparkcontext cannot find suitable driver for jdbc"
+title:  "SparkContext can find no suitable driver for jdbc"
 date:   2016-7-12 09:33:48 +0800
 categories: spark
 author: Chen Min
@@ -14,7 +14,7 @@ when i use a jdbc format url to connect to a mysql server in spark program.
 
 a error occured , no suitable driver ........,as follow:
 
-{% highlight ruby linenos %}
+{% highlight scala linenos %}
   def hive_to_mysql(data: DataFrame, tableName: String): Unit = {
     data.write.mode(SaveMode.Append).jdbc(url, tableName, mysql_prop)
   }
@@ -30,7 +30,7 @@ i found a pull request about no suitable driver from spark github,
 
 [pull 5782]
 
-{% highlight ruby linenos %}
+{% highlight scala linenos %}
 def getConnector(driver: String, url: String, properties: Properties): () => Connection = {
       () => {
         try {
@@ -41,7 +41,7 @@ def getConnector(driver: String, url: String, properties: Properties): () => Con
             logWarning(s"Couldn't find class $driver", e);
 {% endhighlight %}
 
-{% highlight ruby linenos %}
+{% highlight scala linenos %}
      val upperBound = parameters.getOrElse("upperBound", null)
       val numPartitions = parameters.getOrElse("numPartitions", null)
   
@@ -67,7 +67,7 @@ and reload the jdbc driver with the same driver loaded by sparkcontext .
 the key point is that the pull request has been mergen,haha.
 so i add a line before connectting to mysql server,like this 
 
-{% highlight ruby linenos %}
+{% highlight scala linenos %}
   def hive_to_mysql(data: DataFrame, tableName: String): Unit = {
     DriverRegistry.register("com.mysql.jdbc.Driver")
     data.write.mode(SaveMode.Append).jdbc(url, tableName, mysql_prop)
@@ -81,7 +81,7 @@ sparkContext can not find the registered driver...............
 
 the the CTO in my company solve the final problem for me.
 
-{% highlight ruby linenos %}
+{% highlight scala linenos %}
   Property mysql_prop = new Property()
   mysql_prop.add("user","root")
   mysql_prop.add("password","password")
