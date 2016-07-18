@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home" id="home">
 
   <h1 class="page-heading">Here are</h1>
 
@@ -10,3 +10,8 @@ layout: default
   
   {% include paginator.html %}
 </div>
+
+<script>
+if(document.getElementById('home').left<document.getElementById('navi').left)
+document.getElementById('navi').remove;
+</script>
