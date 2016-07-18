@@ -26,4 +26,4 @@ paginate: 5
 
 permalink: none
 
-highlighter: pygments
+highlighter: rouge
