@@ -34,7 +34,7 @@
 .subtitle {
 	position:absolute;
 	padding: 0px 0 0px 0px;
-	margin-top:140px;
+	margin: 135px 0 0 0;
 	color:white;
 }
 
@@ -79,7 +79,7 @@
 	bround-color:#1c3340;
 }
 
-.footer-link:link,.footer-link:visited {
+.footer-link,.footer-link:visited {
 	color:#828282;
 }
 
