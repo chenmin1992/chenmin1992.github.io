@@ -26,4 +26,4 @@ useCompression=true
 设置方法：
 
 
-![image](../img/QQ截图20161128131131.png)
+![image](../img/20161128131131.png)
