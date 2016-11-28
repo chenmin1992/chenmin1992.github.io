@@ -1,3 +1,3 @@
 # Welcome to chenmin's technology blog
-  http://www.chenmin.tk
+  http://www.chenmin.ml
 
