@@ -1,0 +1,22 @@
+---
+layout: post
+title:  "一个不错的lnmpa一键包"
+date:   2016-12-07 19:47:13 +0800
+categories: vps
+author: Chen Min
+---
+
+
+官网：[https://lnmp.org/](https://lnmp.org/)
+
+运行很流畅，安装很stable
+
+唯一一点不好的就是
+安装MySQL 5.6或5.7及MariaDB 10必须1G以上内存!。
+因为它所有组件都是编译安装。
+
+一直在用，很不错。
+
+最新版下载：[https://lnmp.org/download.html](https://lnmp.org/download.html)
+
+官网：[https://lnmp.org/install.html](https://lnmp.org/install.html)

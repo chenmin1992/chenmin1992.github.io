@@ -1,3 +1,3 @@
-# Welcome to chenmin's technology blog
+# Welcome to chenmin's personal blog
   http://www.chenmin.ml
 
