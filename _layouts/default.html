@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body onload="remove_navi()">
 
     {% include header.html %}
 	
@@ -18,8 +18,4 @@
     {% include footer.html %}
 
   </body>
-<script>
-if(document.getElementById('home').getBoundingClientRect().left<document.getElementById('navi').getBoundingClientRect().right)
-document.getElementById('navi').remove();
-</script>
 </html>
