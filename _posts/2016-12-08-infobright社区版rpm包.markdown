@@ -13,4 +13,4 @@ infobright已经不提供社区版很久了
 
 需要的自行下载吧
 
-链接:[infobright-4.0.7-0-x86_64-ice.rpm](file/infobright-4.0.7-0-x86_64-ice.rpm)
+链接:[http://pan.baidu.com/s/1b0mMx4](http://pan.baidu.com/s/1b0mMx4)
