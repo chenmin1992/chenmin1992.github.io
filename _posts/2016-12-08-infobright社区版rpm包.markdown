@@ -14,3 +14,5 @@ infobright已经不提供社区版很久了
 需要的自行下载吧
 
 链接:[http://pan.baidu.com/s/1b0mMx4](http://pan.baidu.com/s/1b0mMx4)
+
+额,push不上去了
