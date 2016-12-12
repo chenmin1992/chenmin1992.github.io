@@ -1,0 +1,20 @@
+---
+layout: post
+title:  "鸟哥的linux私房菜(视频+pdf)教程"
+date:   2016-12-12 09:42:33 +0800
+categories: vps
+author: Chen Min
+---
+
+
+私藏很久的鸟哥私房菜
+
+学linux必读的经典
+
+学linux的可以读一下,反正我是一点没看
+
+本教程齐全,有pdf和swf视频版
+
+下载链接:(http://pan.baidu.com/s/1nvTTdsX)[http://pan.baidu.com/s/1nvTTdsX]
+
+链接失效了可以在下边评论
