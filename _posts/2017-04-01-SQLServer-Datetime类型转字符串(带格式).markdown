@@ -14,7 +14,7 @@ author: Chen Min
 三、下表是SQL Server 系统提供的转换样式编号：
 
 |不带世纪数位 (yy)|带世纪数位 (yyyy)|标准|输入/输出**|
-| --------   | -----:   | :----: |  :----: |
+| --------   | -----:   | ----: |  ----: |
 |-|0 或 100 (*)|默认值|mon dd yyyy hh:miAM（或 PM）|
 |1|101|美国|mm/dd/yyyy|
 |2|102|ANSI|yy.mm.dd|
@@ -81,7 +81,7 @@ SELECT CONVERT(varchar(100), GETDATE(), 25) AS Style25
 
 运行结果：
 
-![image](../img/AT%4[%8FNEX7RHX]3HN0GRK.png)
+![image](../img/fhasdjaklfjadsdsojeriowej1.png)
 
 
 五、带世纪数位的实例代码（注释的表示非有效的样式号）：
@@ -124,7 +124,7 @@ SELECT CONVERT(varchar(100), GETDATE(), 131) AS Style131
 
 运行结果：
 
-![image](../img/9(A{(PS]_OX[`5DILWSZHCV.png)
+![image](../img/fhasdjaklfjadsdsojeriowej2.png)
 
 
 SQL将datetime转化为字符串并截取字符串
@@ -135,7 +135,7 @@ SQL将datetime转化为字符串并截取字符串
 select sr_child as '孩子姓名', sr_parents as '家长姓名' ,ss_updatetime as '分配时间', left(ss_updatetime,CHARINDEX(' ',ss_updatetime)-1),SUBSTRING(CONVERT(CHAR(19), ss_updatetime, 120),1,10)as '转换格式并截取后的时间'from dbo.tb_sell_resources,dbo.tb_sell_selldetails where sr_id = ss_rsid and ss_qdstate <> 1 order by ss_updatetime 
 {% endhighlight %}
 
-![image](../img/0XZZV2AZ%7`EYG[6[4~(}2I.png)
+![image](../img/fhasdjaklfjadsdsojeriowej3.png)
 
 
 sql 中字符串截取函数： SUBSTRING(name,start,end) 
